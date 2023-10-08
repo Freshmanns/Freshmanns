@@ -1,0 +1,94 @@
+body {
+    background-color: whitesmoke;
+    color: #2c2626;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+}
+.addValue {
+   display: flex;
+    flex-direction: column;
+    background-color: #df0a0a;
+    width: 600px;
+    margin: 0 auto;
+    padding: 2em 3em;
+    border-radius: 15px;
+    border-style: solid;
+    font-size: 20px;
+
+}
+
+input {
+    height: 1.6em;
+    border: 0px;
+    border-radius: 5px;
+    margin: 11px;
+}
+input:focus {
+    outline: 2px solid grey;
+
+}
+
+button {
+    margin-top: 5px;
+    margin-left: 260px;
+    width: fit-content;
+    height: 2.6em;
+    border-radius: 5px;
+    background-color: #201113;
+    color: whitesmoke;
+}
+
+button:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+
+.hidden { 
+    display: none !important;
+}
+
+.storeValue {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #df0a0a;
+    width: 600px;
+    border-style: solid;
+    max-height: fit-content;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 2em 3em;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+#nameHead {
+    padding-left: 15px;
+}
+
+#phoneHead {
+    padding-left: 120px;
+}
+
+.phoneRow {
+    padding-left: 135px;
+    text-align: center;
+}
+
+.nameRow {
+    padding-left: 20px;
+    text-align: center;
+
+}
+
+.editeaza, .sterge {
+    margin-left: 40px;
+}
+
+.error {
+    background-color: red;
+}
