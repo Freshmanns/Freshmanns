@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phonebook</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body onload="draw()">
+    <h1>Phonebook</h1>
+    <title>Search Bar</title>
+    <style>
+        /* Basic CSS for the search bar */
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .search-box {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .search-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        /* Style the button when hovered over */
+        .search-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <input type="text" class="search-box" placeholder="Search...">
+        <button class="search-button">Search</button>
+    </div>
+    <section class="addValue">
+        <form id="form" onsubmit="adauga(this,event)">
+            <label for="">Name:abdulrazak auwal<input type="text" name="name" placeholder="Enter name..."></label>
+            <label for="">Phone number:07036170175 <input type="text" name="phone" placeholder="Enter phone number..."></label>
+            <button onclick="adauga(form,event)">save</button>
+        </form>
+    </section>
+      
+    <section class="storeValue hidden">
+        <table class="tabel" id="list">
+            <thead>
+                <tr>
+                    <th id="nameHead"> <p>Name</p></th>
+                    <th id="phoneHead"> <p>Phone number</p></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          </section>
+    
+</body>
+</html>
