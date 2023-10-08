@@ -14,3 +14,6 @@ Features:
 - Delete contacts to remove them from the phonebook.
   
 - User-friendly and responsive web design for ease of use on various devices.
+
+
+Abdulrazak Auwal (nas/ste/19/1065)
